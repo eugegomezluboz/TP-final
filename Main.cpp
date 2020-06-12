@@ -8,7 +8,6 @@ using namespace std;
 
 int main()
 {
-	//hola
 	system("pause");
 	return 0;
 }
