@@ -10,5 +10,8 @@ int main()
 {
 	//hola
 	system("pause");
+	
+	cout << "hola euge" << endl;
+	
 	return 0;
 }
