@@ -5,6 +5,6 @@ using namespace std;
 
 void main2
 {
-	cout << "anduvo??" << endl;
+	//hoy 13/06/2020 hago una nueva prueba
     system("pause");
 }
