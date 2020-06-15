@@ -1,7 +1,7 @@
 #pragma once
 #include "cTripulacion.h"
 
-class cPasajeros : cTripulacion
+class cPasajeros : public cTripulacion
 {
 public:
 	int codigo;
