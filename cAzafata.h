@@ -6,9 +6,9 @@ private:
 	bool disponible;
 public:
 	bool Ocupada();
-	bool EntregarComida();
-	bool EntregarBebida();
-	bool LlamadoCliente();
-	bool LlamadoPiloto();
-	bool Anuncios();
+	void EntregarComida();
+	void EntregarBebida();
+	void LlamadoCliente();
+	void LlamadoPiloto();
+	void Anuncios();
 };

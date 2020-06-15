@@ -4,9 +4,10 @@
 class cPasajeros : public cTripulacion
 {
 public:
-	int codigo;
-	string clase;
+	const int codigo;
+	const string clase;
 private:
+	cPasajeros(int cod, string clas);
 	void serLlevadoPorElAvion();
 	bool pedirComida();
 	bool pedirBebida();
@@ -15,6 +16,8 @@ private:
 	void llamarAAzafata();
 	bool descomponerse();
 	bool arrebatarse();
+
+
 };
 
 
