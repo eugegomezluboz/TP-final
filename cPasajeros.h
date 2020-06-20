@@ -1,6 +1,7 @@
 #pragma once
 #include "cTripulacion.h"
 
+
 class cPasajeros : public cTripulacion
 {
 public:
@@ -16,8 +17,6 @@ private:
 	void llamarAAzafata();
 	bool descomponerse();
 	bool arrebatarse();
-
-
 };
 
 

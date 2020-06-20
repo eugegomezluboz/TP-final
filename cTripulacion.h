@@ -12,4 +12,5 @@ private:
 
 public:
 	cTripulacion(string nom, string apell, string dni, string trab);
+	~cTripulacion();
 };
