@@ -4,6 +4,10 @@
 class cCopiloto : public cPiloto
 {
 private:
+
 public:
+	cCopiloto();
+	~cCopiloto() {};
+	
 	void ComunicarConTorreDeControl();
 };

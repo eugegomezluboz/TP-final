@@ -1,4 +1,7 @@
 #pragma once
+#include <stdlib.h>
+#include <string.h>
+#include <iostream>
 
 class cPersona 
 {

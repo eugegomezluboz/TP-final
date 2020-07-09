@@ -1,14 +1,15 @@
 #pragma once
 #include "cPersona.h"
 
-
 class cPasajeros : public cPersona
 {
 public:
-	const int codigo;
+	const string codigo;
 	const string clase;
 private:
-	cPasajeros(int cod, string clas);
+	cPasajeros(const string cod,const string clas);
+	~cPasajeros() {};
+
 	void serLlevadoPorElAvion();
 	bool pedirComida();
 	bool pedirBebida();
