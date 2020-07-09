@@ -1,6 +1,7 @@
 #pragma once
+#include "cPasajeros.h"
 
-class cTurista
+class cTurista : public cPasajeros
 {
 private:
 public:

@@ -1,8 +1,8 @@
 #pragma once
-#include "cTripulacion.h"
+#include "cPersona.h"
 
 
-class cPasajeros : public cTripulacion
+class cPasajeros : public cPersona
 {
 public:
 	const int codigo;

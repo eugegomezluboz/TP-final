@@ -1,6 +1,7 @@
 #pragma once
+#include "cTripulacion.h"
 
-class cMarshall
+class cMarshall : public cTripulacion
 {
 private:
 

@@ -1,16 +1,19 @@
 #pragma once
-#include "string.h"
-#include "iostream"
-#include "stdlib"
+#include <string>
+#include <iostream>
+#include <stdlib.h>
+#include "cPersona.h"
 
-using namespace std;
-
-class cTripulacion
+class cTripulacion : public cPersona
 {
 private:
-	string nombre, apellido, DNI, trabajo;
+	string cuil, obra_social;
+	int sueldo;
 
 public:
-	cTripulacion(string nom, string apell, string dni, string trab);
-	~cTripulacion();
+	cTripulacion(string cl, string os, int suel);
+	~cTripulacion() {};
+
+
+
 };

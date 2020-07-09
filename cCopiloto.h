@@ -1,7 +1,7 @@
 #pragma once
-#include "cPilotos.h"
+#include "cPiloto.h"
 
-class cCopilotos : cPilotos
+class cCopiloto : public cPiloto
 {
 private:
 public:

@@ -1,6 +1,7 @@
 #pragma once
+#include "cTripulacion.h"
 
-class cPilotos
+class cPiloto : public cTripulacion
 {
 private:
 public:

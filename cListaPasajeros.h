@@ -6,7 +6,7 @@
 class cListaPasajeros
 {
 	
-	cPasajeros* pasajero;
+	cPasajeros** pasajero;
 	int ca, tam;
 
 public:
