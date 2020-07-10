@@ -14,10 +14,6 @@ private:
 	cPasajeros(const string cod, tipo_clase clasecita);
 	~cPasajeros() {};
 
-	
-	
-	
-	
 	void serLlevadoPorElAvion();
 	bool pedirComida();
 	bool pedirBebida();

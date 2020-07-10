@@ -17,5 +17,5 @@ public:
 
 	void imprimir();
 
-	//int getIndex(string dni);
+	int getIndex(string dni);
 };

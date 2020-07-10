@@ -21,15 +21,27 @@ cListaPasajeros::~cListaPasajeros()
 	}
 }
 
-bool cListaPasajeros::AgregarP(cPersona* persona) { // si devuelve false es porque la lista está llena
+int cListaPasajeros::getIndex(string dni)
+{
+	for (int i = 0; i < CA; i++) 
+		if (pasajero[i]->getDNI() == dni)
+			return i;
+	
+	return -1;
+}
+
+bool cListaPasajeros::AgregarP(cPasajeros* pasajero) { // si devuelve false es porque la lista está llena o porque la 
 	if (CA == TAM)
 		return false;
 	
-	//aca me fijo si la persona ya estaba, entonces si es verdad no la agrego
-	string dni = pasaje//string dni = persona->getDni();
+	string dni;
+	dni = pasajero->getDNI();
+
 	int pos = getIndex(dni);
-	if (pos >= 0)
+
+	if (pos < 0)
 		return false;
-	Persona[CA++] = persona;
+	
+	pasajero[ca++] = pasajero;
 	return true;
 }
