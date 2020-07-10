@@ -1,22 +1,23 @@
 #pragma once
 #include "cPersona.h"
 
-struct tipo_pasajero
-{
-	string turista, primera_clase, ejecutiva;
-};
-tipo_pasajero Pasajero;
+enum tipo_clase { turista, ejecutiva, primera };
 
 class cPasajeros : public cPersona
 {
 public:
 	const string codigo;
 	const string clase;
-	tipo_pasajero tip_pas;
+	tipo_clase clase;
+
 private:
-	cPasajeros(const string cod, const string clas);
+	cPasajeros(const string cod, tipo_clase clasecita);
 	~cPasajeros() {};
 
+	
+	
+	
+	
 	void serLlevadoPorElAvion();
 	bool pedirComida();
 	bool pedirBebida();

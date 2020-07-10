@@ -10,6 +10,7 @@ class cTripulacion
 private:
 	string nombre, apellido, DNI, trabajo;
 
+
 public:
 	cTripulacion(string nom, string apell, string dni, string trab);
 	~cTripulacion();

@@ -10,11 +10,11 @@ using namespace std;
 
 int main()
 {
-	cListaPasajeros list_1_pasajeros(200);
+	cListaPasajeros ListaDePasajeros(200);
 
-	cPasajeros* pasajero1 = new cPasajeros("sfjiga","ejecutiva");
+	cPasajeros* pasajero1 = new cPasajeros("BS428293241-99H",ejecutiva);
 
-	list_1_pasajeros.
+	ListaDePasajeros.AgregarP(pasajero1);
 
 
 	

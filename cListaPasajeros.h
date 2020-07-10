@@ -13,7 +13,9 @@ public:
 	cListaPasajeros(int tm = MAXIMO);
 	~cListaPasajeros();
 
+	bool AgregarP(cPersona* pasajero);
+
 	void imprimir();
 
-	int getIndex(string dni);
+	//int getIndex(string dni);
 };
