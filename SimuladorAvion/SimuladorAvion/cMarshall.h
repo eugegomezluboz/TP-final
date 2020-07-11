@@ -6,6 +6,6 @@ class cMarshall : public cTripulacion
 private:
 
 public:
-	bool EncarcelarAlPasajeroArrebatado();
+	bool EncarcelarAlPasajeroArrebatado(); // 
 };
 	

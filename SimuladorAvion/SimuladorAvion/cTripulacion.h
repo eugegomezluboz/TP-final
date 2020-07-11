@@ -11,7 +11,7 @@ private:
 	int sueldo;
 
 public:
-	cTripulacion(string cl, string os, int suel);
+	cTripulacion(string Cuil, string Obra_social, int Sueldo);
 	~cTripulacion() {};
 
 
