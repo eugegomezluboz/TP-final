@@ -25,6 +25,7 @@
     <ClInclude Include="cEjecutiva.h" />
     <ClInclude Include="cEventos.h" />
     <ClInclude Include="cListaPasajeros.h" />
+    <ClInclude Include="cListaTemplate.h" />
     <ClInclude Include="cListaTripulacion.h" />
     <ClInclude Include="cMarshall.h" />
     <ClInclude Include="cPasajeros.h" />
@@ -37,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cListaPasajeros.cpp" />
+    <ClCompile Include="cListaTemplate.cpp" />
     <ClCompile Include="cPersona.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp" />

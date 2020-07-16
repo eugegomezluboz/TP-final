@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include "cPersona.h"
 
+using namespace std;
+
 class cTripulacion : public cPersona
 {
 private:
