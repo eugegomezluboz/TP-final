@@ -37,8 +37,10 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cAzafata.cpp" />
     <ClCompile Include="cListaPasajeros.cpp" />
     <ClCompile Include="cListaTemplate.cpp" />
+    <ClCompile Include="cPasajeros.cpp" />
     <ClCompile Include="cPersona.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp" />

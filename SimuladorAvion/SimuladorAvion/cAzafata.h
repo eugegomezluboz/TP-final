@@ -1,19 +1,26 @@
 #pragma once
+#include <iomanip>
+#include <iostream>
 #include "cTripulacion.h"
+#include "cPasajeros.h"
+#include "cPiloto.h"
+
+using namespace std;
 
 class cAzafata : public cTripulacion
 {
 private:
 	bool disponible;
 public:
-	cAzafata(bool disp);
+	cAzafata(string Cuil, string Obra_social, int Sueldo, bool disp);
 	~cAzafata() {};
 	
 	
 	bool Ocupada();
-	void EntregarComida(string pasajero);
-	void EntregarBebida(string pasajero);
-	void LlamadoCliente(string pasajero);
-	void LlamadoPiloto(string piloto);
+	void EntregarComida(cPasajeros *pasajero);
+	void EntregarBebida(cPasajeros *pasajero);
+	void LlamadoCliente(cPasajeros *pasajero);
+	void LlamadoPiloto(cPiloto *piloto);
 	void Anuncios();
+	
 };

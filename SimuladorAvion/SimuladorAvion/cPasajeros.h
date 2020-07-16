@@ -1,5 +1,8 @@
 #pragma once
 #include "cPersona.h"
+#include "cAzafata.h"
+
+using namespace std;
 
 enum tipo_clase { turista, ejecutiva, primera };
 
@@ -11,7 +14,7 @@ public:
 	tipo_clase clase;
 
 private:
-	cPasajeros(const string cod, tipo_clase clasecita);
+	cPasajeros(const string cod, tipo_clase clasecita, string nom, string ape, string dni);
 	~cPasajeros() {};
 
 	void serLlevadoPorElAvion();
@@ -19,7 +22,7 @@ private:
 	bool pedirBebida();
 	void irAlBaño();
 	bool volverAlAsiento();
-	void llamarAAzafata();
+	void llamarAzafata(cAzafata *azafata);
 	bool descomponerse();
 	bool arrebatarse();
 };
