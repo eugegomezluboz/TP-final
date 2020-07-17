@@ -42,6 +42,7 @@
     <ClCompile Include="cMarshall.cpp" />
     <ClCompile Include="cPasajeros.cpp" />
     <ClCompile Include="cPersona.cpp" />
+    <ClCompile Include="cPiloto.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp" />
   </ItemGroup>
