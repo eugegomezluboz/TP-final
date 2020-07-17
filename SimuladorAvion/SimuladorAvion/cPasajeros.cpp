@@ -13,7 +13,7 @@ cPasajeros::~cPasajeros() {};
 
 void cPasajeros::serLlevadoPorElAvion()
 {
-
+	sentado = false;
 }
 
 bool cPasajeros::pedirComida(string tipo_de_comida, cAzafata *azafata)

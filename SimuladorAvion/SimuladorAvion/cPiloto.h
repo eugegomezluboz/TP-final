@@ -25,5 +25,5 @@ public:
 	void PedirAnuncioaAzafata(cAzafata *azafata);
 	void PilotearAvion();
 
-	virtual void ComunicarConTorreDeControl();
+	virtual void ComunicarConTorreDeControl()// no se como hacer lo de virtual
 };

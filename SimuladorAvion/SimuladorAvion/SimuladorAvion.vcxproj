@@ -37,12 +37,15 @@
   <ItemGroup>
     <ClCompile Include="cAvion.cpp" />
     <ClCompile Include="cAzafata.cpp" />
+    <ClCompile Include="cCopiloto.cpp" />
+    <ClCompile Include="cEjecutiva.cpp" />
     <ClCompile Include="cEventos.cpp" />
     <ClCompile Include="cListaTemplate.cpp" />
     <ClCompile Include="cMarshall.cpp" />
     <ClCompile Include="cPasajeros.cpp" />
     <ClCompile Include="cPersona.cpp" />
     <ClCompile Include="cPiloto.cpp" />
+    <ClCompile Include="cTurista.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp" />
   </ItemGroup>
