@@ -6,6 +6,7 @@
 class cPiloto : public cTripulacion
 {
 private:
+
 public:
 	cPiloto();
 	~cPiloto() {};
