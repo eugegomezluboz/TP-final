@@ -18,12 +18,6 @@
     <ClInclude Include="cEventos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="cListaPasajeros.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="cListaTripulacion.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="cMarshall.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -65,9 +59,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cListaPasajeros.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="cPersona.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
@@ -84,6 +75,15 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="cPasajeros.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="cAvion.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="cMarshall.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="cEventos.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

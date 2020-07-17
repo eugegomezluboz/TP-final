@@ -10,18 +10,18 @@ class cPasajeros : public cPersona
 {
 public:
 	const string codigo;
-	const string clase;
 	tipo_clase clase;
+	bool sentado, arrebatado;
 
 private:
-	cPasajeros(const string cod, tipo_clase clasecita, string nom, string ape, string dni);
+	cPasajeros(const string cod, tipo_clase clasecita, bool Sentado, bool Arrebatado, string nom, string ape, string dni);
 	~cPasajeros() {};
 
 	void serLlevadoPorElAvion();
-	bool pedirComida();
-	bool pedirBebida();
+	virtual bool pedirComida(string tipo_de_comida, cAzafata *azafata);
+	virtual bool pedirBebida(string tipo_de_bebida, cAzafata *azafata);
 	void irAlBaño();
-	bool volverAlAsiento();
+	void volverAlAsiento();
 	void llamarAzafata(cAzafata *azafata);
 	bool descomponerse();
 	bool arrebatarse();

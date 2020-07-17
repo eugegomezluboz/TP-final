@@ -1,10 +1,12 @@
 #include "pch.h"
 #include "cPasajeros.h"
 
-cPasajeros::cPasajeros(const string cod, tipo_clase clasecita, string nom, string ape, string dni) : cPersona(nom, ape, dni)
+cPasajeros::cPasajeros(const string cod, tipo_clase clasecita, bool Sentado, bool Arrebatado, string nom, string ape, string dni) : cPersona(nom, ape, dni)
 {
 	codigo = cod; // fijarme esto porque yo quiero que cod sea const pero aca me tira error
 	clase = clasecita;
+	sentado = Sentado;
+	arrebatado = Arrebatado;
 }
 
 cPasajeros::~cPasajeros() {};
@@ -14,23 +16,26 @@ void cPasajeros::serLlevadoPorElAvion()
 
 }
 
-bool cPasajeros::pedirComida()
+bool cPasajeros::pedirComida(string tipo_de_comida, cAzafata *azafata)
 {
 	return false;
 }
 
-bool cPasajeros::pedirBebida()
+bool cPasajeros::pedirBebida(string tipo_de_bebida, cAzafata *azafata)
 {
 	return false;
 }
 
 void cPasajeros::irAlBaño()
 {
+	sentado = false;
+	return;
 }
 
-bool cPasajeros::volverAlAsiento()
+void cPasajeros::volverAlAsiento()
 {
-	return false;
+	sentado = true;
+	return;
 }
 
 void cPasajeros::llamarAzafata(cAzafata * azafata)
@@ -44,5 +49,5 @@ bool cPasajeros::descomponerse()
 
 bool cPasajeros::arrebatarse()
 {
-	return false;
+	arrebatado = true;
 }
