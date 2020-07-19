@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "cListaTemplate.h"
 
 template<class T>

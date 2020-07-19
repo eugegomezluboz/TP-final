@@ -13,7 +13,7 @@ private:
 	bool activo = false;
 
 public: 
-	cAvion(cListaTemplate<cPasajeros> *Lista_pasajeros, cListaTemplate<cTripulacion> *lista_tripulacion);
+	cAvion(cListaTemplate<cPasajeros> *pasajeros_para_subir, cListaTemplate<cTripulacion> *tripulacion_para_subir);
 	~cAvion();
 
 	void pedirComida(cPersona *persona, string comida);

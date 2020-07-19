@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "cPersona.h"
 
 cPersona::cPersona(string nom, string ape, string dni)
