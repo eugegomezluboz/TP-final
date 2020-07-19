@@ -12,7 +12,7 @@ private:
 
 public:
 	cPersona(string nom, string ape, string dni);
-	~cPersona() {};
+	~cPersona();
 
 	void setNombre(string _nombre);
 	string getNombre();
@@ -22,6 +22,4 @@ public:
 
 	void setDNI(string _dni);
 	string getDNI();
-	
-	~cPersona(){};
 };

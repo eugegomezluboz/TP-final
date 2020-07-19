@@ -15,10 +15,12 @@ public:
 	tipo_clase clasecita;
 	bool arrebatado = false;
 	bool sentado_en_avion = false;
+	cListaTemplate<cPasajeros>* lista_pasajeros_aux;
+	cListaTemplate<cPasajeros>* personas_aeropuerto_aux;
 
-private:
-	cPasajeros(string nom, string ape, string dni, cListaTemplate<cPasajeros> *Lista_pasajeros, cListaTemplate<cPasajeros> *personas_aeropuerto);
-	~cPasajeros() {};
+public:
+	cPasajeros(string nom, string ape, string dni, cListaTemplate<cPasajeros> *lista_pasajeros, cListaTemplate<cPasajeros> *personas_aeropuerto);
+	~cPasajeros();
 
 	virtual bool puedePedirComida(string tipo_de_comida) {};
 	virtual bool puedePedirBebida(string tipo_de_bebida) {};
@@ -33,6 +35,8 @@ private:
 	//bool descomponerse();
 	bool arrebatarse() { arrebatado = true; };
 	string crear_Codigo();
+	void agregar_pasajero();
+	string getclave();
 };
 
 

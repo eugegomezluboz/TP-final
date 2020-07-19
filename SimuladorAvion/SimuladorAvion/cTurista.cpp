@@ -1,7 +1,11 @@
 #include "pch.h"
 #include "cTurista.h"
 
-cTurista::cTurista(acompaniamiento Compania, const string cod, tipo_clase clasecita, bool Sentado, bool Arrebatado, string nom, string ape, string dni):cPasajeros(cod,clasecita,Sentado,Arrebatado,nom,ape,dni)
+cTurista::cTurista(acompaniamiento _compania, string nom, string ape, string dni, cListaTemplate<cPasajeros> *lista_pasajeros, cListaTemplate<cPasajeros> *personas_aeropuerto) : cPasajeros(nom, ape, dni,lista_pasajeros,personas_aeropuerto)
 {
-	compania = Compania;
+	clasecita = turista;
+	compania = _compania;
+	agregar_pasajero();
 }
+
+cTurista::~cTurista(){}

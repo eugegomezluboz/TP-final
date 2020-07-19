@@ -12,8 +12,6 @@ private:
 	acompaniamiento compania;
 
 public:
-	cTurista(acompaniamiento Compania, const string cod, tipo_clase clasecita, bool Sentado, bool Arrebatado, string nom, string ape, string dni);
-	~cTurista() {};
-
-
+	cTurista(acompaniamiento _compania, string nom, string ape, string dni, cListaTemplate<cPasajeros> *lista_pasajeros, cListaTemplate<cPasajeros> *personas_aeropuerto);
+	~cTurista();
 };

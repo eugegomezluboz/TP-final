@@ -71,12 +71,12 @@ template<class T>
 
 bool cListaTemplate<T>::AgregarItemOrdenado(const T * item)
 {
-	/*for (unsigned int i = 0; i < CA; i++)
+	for (unsigned int i = 0; i < CA; i++)
 	{
 	if (vector[i]->getclave() == clave)
 	return vector[i];
 	}
-	*/
+	
 	return false;
 }
 template<class T>
@@ -166,6 +166,5 @@ unsigned int cListaTemplate<T>::getItemPos(string clave)
 		if (vector[i]->getclave() == clave)
 			return i;
 	}
-
-	return INT_MAX;
+	return -1;
 }
