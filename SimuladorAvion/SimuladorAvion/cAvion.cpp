@@ -1,14 +1,25 @@
 #include "pch.h"
 #include "cAvion.h"
 
-cAvion::cAvion(cListaTemplate<cPasajeros> lista_p, cListaTemplate<cTripulacion> lista_t, cListaTemplate<cEventos> lista_e, bool Activo)
+cAvion::cAvion(cListaTemplate<cPasajeros> *pasajeros_para_subir, cListaTemplate<cTripulacion> *tripulacion_para_subir)
 {
-	lista_pasajeros = lista_p;
-	lista_tripulacion = lista_t;
-	lista_eventos = lista_e;
+	activo = false;
+	lista_pasajeros = pasajeros_para_subir;
+	lista_tripulacion = tripulacion_para_subir;
+	lista_eventos = new cListaTemplate<cEventos>(100);
 }
 
-cAvion::~cAvion() {};
+cAvion::~cAvion()
+{
+	lista_pasajeros->~cListaTemplate();
+	lista_tripulacion->~cListaTemplate();
+	lista_eventos->~cListaTemplate();
+}
+
+void cAvion::pedirComida(cPersona *persona, string comida)
+{
+	
+}
 
 void cAvion::Despegar()
 {

@@ -1,7 +1,9 @@
 #pragma once
 #include <stdlib.h>
-#include <string.h>
+#include <string>
 #include <iostream>
+
+using namespace std;
 
 class cPersona 
 {
@@ -10,6 +12,7 @@ private:
 
 public:
 	cPersona(string nom, string ape, string dni);
+	~cPersona() {};
 
 	void setNombre(string _nombre);
 	string getNombre();

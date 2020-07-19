@@ -17,8 +17,8 @@ private:
 	cPasajeros(const string cod, tipo_clase clasecita, bool Sentado, bool Arrebatado, string nom, string ape, string dni);
 	~cPasajeros() {};
 
-	virtual bool pedirComida(string tipo_de_comida, cAzafata *azafata);
-	virtual bool pedirBebida(string tipo_de_bebida, cAzafata *azafata);
+	virtual bool puedePedirComida(string tipo_de_comida);
+	virtual bool puedePedirBebida(string tipo_de_bebida);
 	virtual void TrabajarEnNotebook();
 	virtual void masaje();
 	virtual void tomarChampagne();
