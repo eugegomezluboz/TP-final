@@ -1,6 +1,8 @@
 #pragma once
+#include <string>
 #include "cPersona.h"
 #include "cAzafata.h"
+#include "cListaTemplate.h"
 
 using namespace std;
 
@@ -9,26 +11,28 @@ enum tipo_clase { turista, ejecutiva, primera };
 class cPasajeros : public cPersona
 {
 public:
-	const string codigo;
-	tipo_clase clase;
-	bool sentado, arrebatado;
+	string codigo;
+	tipo_clase clasecita;
+	bool arrebatado = false;
+	bool sentado_en_avion = false;
 
 private:
-	cPasajeros(const string cod, tipo_clase clasecita, bool Sentado, bool Arrebatado, string nom, string ape, string dni);
+	cPasajeros(string nom, string ape, string dni, cListaTemplate<cPasajeros> *Lista_pasajeros, cListaTemplate<cPasajeros> *personas_aeropuerto);
 	~cPasajeros() {};
 
-	virtual bool puedePedirComida(string tipo_de_comida);
-	virtual bool puedePedirBebida(string tipo_de_bebida);
-	virtual void TrabajarEnNotebook();
-	virtual void masaje();
-	virtual void tomarChampagne();
+	virtual bool puedePedirComida(string tipo_de_comida) {};
+	virtual bool puedePedirBebida(string tipo_de_bebida) {};
+	virtual bool puedeTrabajarEnNotebook() { return false; };
+	virtual bool puedePedirMasaje() { return false; };
+	virtual bool puedeTomarChampagne() { return false; };
 	
-	void serLlevadoPorElAvion(cAzafata *azafata);
-	void irAlBaño();
-	void volverAlAsiento();
-	void llamarAzafata(cAzafata *azafata);
-	bool descomponerse();
-	bool arrebatarse();
+	//void serLlevadoPorElAvion(cAzafata *azafata);
+	void irAlBaño() { sentado_en_avion = false; };
+	void volverAlAsiento() { sentado_en_avion = true; };
+	//void llamarAzafata(cAzafata *azafata);
+	//bool descomponerse();
+	bool arrebatarse() { arrebatado = true; };
+	string crear_Codigo();
 };
 
 

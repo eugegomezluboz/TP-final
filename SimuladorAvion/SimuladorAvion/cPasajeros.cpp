@@ -1,53 +1,21 @@
 #include "pch.h"
 #include "cPasajeros.h"
 
-cPasajeros::cPasajeros(const string cod, tipo_clase clasecita, bool Sentado, bool Arrebatado, string nom, string ape, string dni) : cPersona(nom, ape, dni)
-{
-	codigo = cod; // fijarme esto porque yo quiero que cod sea const pero aca me tira error
-	clase = clasecita;
-	sentado = Sentado;
-	arrebatado = Arrebatado;
-}
+cPasajeros::cPasajeros(string nom, string ape, string dni, cListaTemplate<cPasajeros> *Lista_pasajeros, cListaTemplate<cPasajeros> *personas_aeropuerto) :cPersona(nom, ape, dni) {}
 
-cPasajeros::~cPasajeros() {};
-
-void cPasajeros::serLlevadoPorElAvion()
+string cPasajeros::crear_Codigo()
 {
-	sentado = false;
-}
+	int max = 99, min = 1;
+	string clase_Cod;
 
-bool cPasajeros::pedirComida(string tipo_de_comida, cAzafata *azafata)
-{
-	return false;
-}
-
-bool cPasajeros::pedirBebida(string tipo_de_bebida, cAzafata *azafata)
-{
-	return false;
-}
-
-void cPasajeros::irAlBaño()
-{
-	sentado = false;
-	return;
-}
-
-void cPasajeros::volverAlAsiento()
-{
-	sentado = true;
-	return;
-}
-
-void cPasajeros::llamarAzafata(cAzafata * azafata)
-{
-}
-
-bool cPasajeros::descomponerse()
-{
-	return false;
-}
-
-bool cPasajeros::arrebatarse()
-{
-	arrebatado = true;
+	if (clasecita == turista)
+		clase_Cod = "TU";
+	if (clasecita == ejecutiva)
+		clase_Cod = "BS";
+	if (clasecita == primera)
+		clase_Cod = "PC";
+	
+	clase_Cod = clase_Cod + getDNI() + to_string(rand() % (max - min + 1) + min);
+	
+	clase_Cod.push_back('a' + rand() % 10);
 }
